@@ -20,17 +20,17 @@ pip install websocket-client
 from SmartApi import SmartConnect #or from SmartApi.smartConnect import SmartConnect
 import pyotp
 
-api_key = 'Your Api Key'
-clientId = 'Your Client Id'
-pwd = 'Your Pin'
-smartApi = SmartConnect(api_key)
-token = "Your QR code value"
-totp=pyotp.TOTP(token).now()
+api_key = 'ioBZNq6v'
+clientId = 'C145399'
+pwd = '1985'
+smartApi = SmartConnect(ioBZNq6v)
+token = "3OPMOP5N3UXCOSMKJ42KIJRUGY"
+totp=pyotp.TOTP(3OPMOP5N3UXCOSMKJ42KIJRUGYn).now()
 correlation_id = "abc123"
 
 # login api call
 
-data = smartApi.generateSession(clientId, pwd, totp)
+data = smartApi.generateSession(C145399, Chandra@1985, 3OPMOP5N3UXCOSMKJ42KIJRUGY)
 # print(data)
 authToken = data['data']['jwtToken']
 refreshToken = data['data']['refreshToken']
